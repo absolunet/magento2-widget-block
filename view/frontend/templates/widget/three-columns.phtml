@@ -1,0 +1,63 @@
+<?php
+    $widgetId = $this->getData('absolunet_widget_id');
+
+    // block1
+    $widgetImg1 = $this->getData('absolunet_image_1');
+    $widgetTitle1 = $this->getData('absolunet_title_1');
+    $widgetUrl1 = $this->getData('absolunet_url_1');
+
+    // block2
+    $widgetImg2 = $this->getData('absolunet_image_2');
+    $widgetTitle2 = $this->getData('absolunet_title_2');
+    $widgetUrl2 = $this->getData('absolunet_url_2');
+
+    // block3
+    $widgetImg3 = $this->getData('absolunet_image_3');
+    $widgetTitle3 = $this->getData('absolunet_title_3');
+    $widgetUrl3 = $this->getData('absolunet_url_3');
+?>
+<section class="absolunet-widget absolunet-three-columns-widget text-center" id="<?php $widgetId; ?>">
+        <div class="clearfix content-widget">
+            <div class="small-4 columns block" style="background-image:url('/pub/media/<?php echo $widgetImg1; ?>')">
+                <?php if ($widgetUrl1): ?>
+                <a href="<?php echo $widgetUrl1; ?>">
+                    <?php endif; ?>
+
+                    <?php if ($widgetTitle1): ?>
+                        <h3><?php echo $widgetTitle1; ?></h3>
+                    <?php endif; ?>
+
+                    <?php if ($widgetUrl1): ?>
+                </a>
+                <?php endif; ?>
+            </div>
+
+            <div class="small-4 columns block" style="background-image:url('/pub/media/<?php echo $widgetImg2; ?>')">
+                <?php if ($widgetUrl2): ?>
+                <a href="<?php echo $widgetUrl2; ?>">
+                    <?php endif; ?>
+
+                    <?php if ($widgetTitle2): ?>
+                        <h3><?php echo $widgetTitle2; ?></h3>
+                    <?php endif; ?>
+
+                    <?php if ($widgetUrl2): ?>
+                </a>
+            <?php endif; ?>
+            </div>
+
+            <div class="small-4 columns block" style="background-image:url('/pub/media/<?php echo $widgetImg3; ?>')">
+                <?php if ($widgetUrl3): ?>
+                <a href="<?php echo $widgetUrl3; ?>">
+                    <?php endif; ?>
+
+                    <?php if ($widgetTitle3): ?>
+                        <h3><?php echo $widgetTitle3; ?></h3>
+                    <?php endif; ?>
+
+                    <?php if ($widgetUrl3): ?>
+                </a>
+            <?php endif; ?>
+            </div>
+    </div>
+</section>

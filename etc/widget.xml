@@ -1,0 +1,716 @@
+<?xml version="1.0"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+
+
+    <!-- WIDGET TWO COLUMNS -->
+    <widget id="absolunet_two_columns" class="Absolunet\WidgetBlock\Block\Widget\TwoColumns" placeholder_image="Absolunet_WidgetBlock::images/two-columns.png">
+        <label translate="true">Absolunet - Two columns Widget</label>
+        <description>Absolunet - Two columns Widget</description>
+
+        <parameters>
+            <parameter name="absolunet_tc_widget_id" xsi:type="text" visible="true" required="true" sort_order="0" >
+                <label translate="true">Widget ID</label>
+            </parameter>
+
+            <parameter name="absolunet_tc_title_1" xsi:type="text" visible="true" sort_order="1">
+                <label translate="true">Title Block 1</label>
+            </parameter>
+
+            <parameter name="absolunet_tc_image_1" xsi:type="block" visible="true" required="true" sort_order="9">
+                <label translate="true">Background Image Block 1</label>
+                <description>Image (dimension minimale : 640px X 580px)</description>
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+
+            <parameter name="absolunet_tc_url_1" xsi:type="text" visible="true" sort_order="12">
+                <label translate="true">Link Bloc 1</label>
+            </parameter>
+
+            <parameter name="absolunet_tc_title_2" xsi:type="text" visible="true" sort_order="13">
+                <label translate="true">Title Block 2</label>
+            </parameter>
+
+            <parameter name="absolunet_tc_image_2" xsi:type="block" visible="true" required="true" sort_order="17">
+                <label translate="true">Background Image Block 2</label>
+                <description>Image (dimension minimale : 640px X 580px)</description>
+
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+
+            <parameter name="absolunet_tc_url_2" xsi:type="text" visible="true" sort_order="20">
+                <label translate="true">Link Bloc 2</label>
+            </parameter>
+        </parameters>
+    </widget>
+    <!--  /END WIDGET TWO COLUMNS -->
+
+    <!-- WIDGET THREE COLUMNS -->
+    <widget id="absolunet_three_columns" class="Absolunet\WidgetBlock\Block\Widget\ThreeColumns" placeholder_image="Absolunet_WidgetBlock::images/three-columns.png">
+        <label translate="true">Absolunet - Three columns Widget</label>
+        <description>Absolunet - Three columns Widget</description>
+
+        <parameters>
+            <parameter name="absolunet_widget_id" xsi:type="text" visible="true" required="true" sort_order="0" >
+                <label translate="true">Widget ID</label>
+            </parameter>
+
+            <parameter name="absolunet_image_1" xsi:type="block" visible="true" sort_order="10">
+                <label translate="true">Image Block 1</label>
+                <description>Image (dimension minimale : 640px X 580px)</description>
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+
+            <parameter name="absolunet_title_1" xsi:type="text" visible="true" sort_order="30">
+                <label translate="true">Title Block 1</label>
+            </parameter>
+
+            <parameter name="absolunet_url_1" xsi:type="text" visible="true" sort_order="60">
+                <label translate="true">Link Bloc 1</label>
+            </parameter>
+
+            <parameter name="absolunet_image_2" xsi:type="block" visible="true" sort_order="80">
+                <label translate="true">Image Block 2</label>
+                <description>Image (dimension minimale : 640px X 580px)</description>
+
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+
+            <parameter name="absolunet_title_2" xsi:type="text" visible="true" sort_order="100">
+                <label translate="true">Title Block 2</label>
+            </parameter>
+
+            <parameter name="absolunet_url_2" xsi:type="text" visible="true" sort_order="130">
+                <label translate="true">Link Bloc 2</label>
+            </parameter>
+
+            <parameter name="absolunet_image_3" xsi:type="block" visible="true" sort_order="150">
+                <label translate="true">Image Block 3</label>
+                <description>Image (dimension minimale : 640px X 580px)</description>
+
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+
+            <parameter name="absolunet_title_3" xsi:type="text" visible="true" sort_order="170">
+                <label translate="true">Title Block 3</label>
+            </parameter>
+
+            <parameter name="absolunet_url_3" xsi:type="text" visible="true" sort_order="200">
+                <label translate="true">Link Bloc 3</label>
+            </parameter>
+        </parameters>
+    </widget>
+    <!--  END WIDGET THREE COLUMNS -->
+
+    <!-- WIDGET TWO COLUMNS -->
+    <widget id="absolunet_two_columns_text_image" class="Absolunet\WidgetBlock\Block\Widget\TwoColumnsTextImage" placeholder_image="Absolunet_WidgetBlock::images/two-columns-text-image.png">
+        <label translate="true">Absolunet - Two columns Text/Image Widget</label>
+        <description>Absolunet - Two columns Text Image Widget</description>
+
+        <parameters>
+            <parameter name="absolunet_tcti_widget_id" xsi:type="text" visible="true" required="true" sort_order="0" >
+                <label translate="true">Widget ID</label>
+            </parameter>
+
+            <parameter name="absolunet_tcti_image_align_bi" xsi:type="select" visible="true" sort_order="1">
+                <label translate="true">Block Image Alignement</label>
+                <options>
+                    <option name="left" value="left" selected="true">
+                        <label translate="true">Left</label>
+                    </option>
+                    <option name="right" value="right">
+                        <label translate="true">Right</label>
+                    </option>
+                </options>
+            </parameter>
+
+            <parameter name="absolunet_tcti_image" xsi:type="block" visible="true" required="true" sort_order="2">
+                <label translate="true">Image</label>
+                <description>Image (dimension minimale : 640px X 580px)</description>
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+
+            <parameter name="absolunet_tcti_title" xsi:type="text" visible="true" required="true" sort_order="3">
+                <label translate="true">Title</label>
+            </parameter>
+
+            <parameter name="absolunet_tcti_text" xsi:type="text" visible="true" sort_order="4">
+                <label translate="true">Text</label>
+            </parameter>
+
+            <parameter name="absolunet_tcti_button" xsi:type="select" visible="true" sort_order="5">
+                <label translate="true">Button</label>
+                <options>
+                    <option name="no-button" value="0" selected="true">
+                        <label translate="true">Disable</label>
+                    </option>
+                    <option name="button" value="1">
+                        <label translate="true">Enable</label>
+                    </option>
+                </options>
+            </parameter>
+
+            <parameter name="absolunet_tcti_button_label" xsi:type="text" visible="true" sort_order="6">
+                <label translate="true">Link Title</label>
+                <depends>
+                    <parameter name="absolunet_tcti_button" value="1" />
+                </depends>
+            </parameter>
+
+            <parameter name="absolunet_tcti_button_url" xsi:type="text" visible="true" required="true" sort_order="7">
+                <label translate="true">Link</label>
+                <depends>
+                    <parameter name="absolunet_tcti_button" value="1" />
+                </depends>
+            </parameter>
+        </parameters>
+    </widget>
+    <!--  /END WIDGET TWO COLUMNS -->
+
+    <!-- WIDGET TWO COLUMNS FULLWIDTH -->
+    <!--
+    <widget id="absolunet_two_columns_fullwidth" class="Absolunet\WidgetBlock\Block\Widget\TwoColumnsFullWidth" placeholder_image="Absolunet_WidgetBlock::images/two-columns-fullwidth.png">
+        <label translate="true">Absolunet - Two columns FullWidth Widget</label>
+        <description>Absolunet - Two columns FullWidth Widget</description>
+
+        <parameters>
+            <parameter name="absolunet_tcfw_id" xsi:type="text" visible="true" required="true" sort_order="0">
+                <label translate="true">Widget ID</label>
+            </parameter>
+            <parameter name="absolunet_tcfw_image_align_bi" xsi:type="select" visible="true" sort_order="1">
+                <label translate="true">Block Image Alignement</label>
+                <options>
+                    <option name="left" value="left" selected="true">
+                        <label translate="true">Left</label>
+                    </option>
+                    <option name="right" value="right">
+                        <label translate="true">Right</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="absolunet_tcfw_fullwidth" xsi:type="select" visible="true" sort_order="2">
+                <label translate="true">Widget FullWidth</label>
+                <options>
+                    <option name="fluid-width" value="fluid-width" selected="true">
+                        <label translate="true">Enable</label>
+                    </option>
+                    <option name="not-fluid-width" value="not-fluid-width">
+                        <label translate="true">Disable</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="absolunet_tcfw_image_large_bi" xsi:type="block" visible="true" required="true" sort_order="3">
+                <label translate="true">Image Large - Block Image</label>
+                <description>(960px X 600px)</description>
+
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="absolunet_tcfw_image_medium_bi" xsi:type="block" visible="true" sort_order="4">
+                <label translate="true">Image Medium - Block Image</label>
+                <description>(770px X 480px)</description>
+
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="absolunet_tcfw_image_small_bi" xsi:type="block" visible="true" sort_order="5">
+                <label translate="true">Image Small - Block Image</label>
+                <description>(640px X 580px)</description>
+
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+
+
+            <parameter name="absolunet_tcfw_enable_url_bi" xsi:type="select" visible="true" source_model="Magento\Config\Model\Config\Source\Yesno" sort_order="6">
+                <label translate="true">Add a link</label>
+                <description>Enable or disable the link</description>
+            </parameter>
+            <parameter name="absolunet_tcfw_url_bi" xsi:type="text" visible="true" sort_order="7">
+                <label translate="true">Link - Block Image</label>
+                <depends>
+                    <parameter name="absolunet_tcfw_enable_url_bi" value="1" />
+                </depends>
+            </parameter>
+            <parameter name="absolunet_tcfw_title_bt" xsi:type="text" visible="true" sort_order="8">
+                <label translate="true">Title - Block Text </label>
+            </parameter>
+            <parameter name="absolunet_tcfw_color_title_bt" xsi:type="text" visible="true" sort_order="9">
+                <label translate="true">Color Title - Block Text</label>
+            </parameter>
+            <parameter name="absolunet_tcfw_desc_bt" xsi:type="text" visible="true" sort_order="10">
+                <label translate="true">Description - Block Text</label>
+            </parameter>
+            <parameter name="absolunet_tcfw_color_desc_bt" xsi:type="text" visible="true" sort_order="11">
+                <label translate="true">Color Description - Block Text</label>
+            </parameter>
+            <parameter name="absolunet_tcfw_cta_label_bt" xsi:type="text" visible="true" sort_order="12">
+                <label translate="true">Label Call to action - block Text</label>
+            </parameter>
+            <parameter name="absolunet_tcfw_cta_url_bt" xsi:type="text" visible="true" sort_order="13">
+                <label translate="true">URL Call to action - Block Text</label>
+            </parameter>
+            <parameter name="absolunet_tcfw_cta_color_bt" xsi:type="select" visible="true" sort_order="14">
+                <label translate="true">Color Call to action - Block Text</label>
+                <options>
+                    <option name="black" value="black" selected="true">
+                        <label translate="true">Black</label>
+                    </option>
+                    <option name="white" value="white">
+                        <label translate="true">White</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="absolunet_tcfw_image_large_bt" xsi:type="block" visible="true" required="true" sort_order="15">
+                <label translate="true">Image Large - Block Text</label>
+                <description>(960px X 600px)</description>
+
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="absolunet_tcfw_image_medium_bt" xsi:type="block" visible="true" sort_order="16">
+                <label translate="true">Image Medium - Block Text</label>
+                <description>(770px X 480px)</description>
+
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="absolunet_tcfw_image_small_bt" xsi:type="block" visible="true" sort_order="17">
+                <label translate="true">Image Small - Block Text</label>
+                <description>(640px X 580px)</description>
+
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+
+
+            <parameter name="absolunet_tcfw_image_alt_bt" xsi:type="text" visible="true" sort_order="18">
+                <label translate="true">Image ALT - Bloc Text</label>
+            </parameter>
+            <parameter name="absolunet_tcfw_enable_url_bt" xsi:type="select" visible="true" source_model="Magento\Config\Model\Config\Source\Yesno" sort_order="19">
+                <label translate="true">Add a link</label>
+                <description>Enable or disable the link</description>
+            </parameter>
+            <parameter name="absolunet_tcfw_url_bt" xsi:type="text" visible="true" sort_order="20">
+                <label translate="true">Link - Bloc Text</label>
+                <depends>
+                    <parameter name="absolunet_tcfw_enable_url_bt" value="1" />
+                </depends>
+            </parameter>
+        </parameters>
+    </widget>
+    -->
+    <!-- /END WIDGET TWO COLUMNS FULLWIDTH-->
+
+    <!-- WIDGET SLIDER -->
+    <!--
+    <widget id="absolunet_slider" class="Absolunet\WidgetBlock\Block\Widget\Slider" placeholder_image="Absolunet_WidgetBlock::images/slider.png">
+        <label translate="true">Absolunet - Slider Widget</label>
+        <description>Absolunet - Slider Widget</description>
+
+        <parameters>
+            <parameter name="absolunet_slider_id" xsi:type="text" visible="true" required="true" sort_order="0">
+                <label translate="true">Widget ID</label>
+            </parameter>
+            <parameter name="absolunet_slider_fullwidth" xsi:type="select" visible="true" required="true" sort_order="0">
+                <label translate="true">Widget FullWidth</label>
+                <options>
+                    <option name="fluid-width" value="fluid-width" selected="true">
+                        <label translate="true">Enable</label>
+                    </option>
+                    <option name="not-fluid-width" value="not-fluid-width">
+                        <label translate="true">Disable</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="absolunet_slider_enable_gallery" xsi:type="select" visible="true" required="true" sort_order="1">
+                <label translate="true">Widget Gallery or a banner ?</label>
+                <options>
+                    <option name="absolunet-gallery-widget" value="absolunet-gallery-widget" selected="true">
+                        <label translate="true">Gallery</label>
+                    </option>
+                    <option name="absolunet-banner-widget" value="absolunet-banner-widget">
+                        <label translate="true">Banner</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="absolunet_slider_image_large_slider_1" xsi:type="block" visible="true" required="true" sort_order="2">
+                <label translate="true">Image Large - Slider 1</label>
+                <description>width: 1920px - height: 690px</description>
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="absolunet_slider_image_medium_slider_1" xsi:type="block" visible="true" sort_order="3">
+                <label translate="true">Image Medium - Slider 1</label>
+                <description>width: 1024px</description>
+
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+
+            <parameter name="absolunet_slider_image_small_slider_1" xsi:type="block" visible="true" sort_order="4">
+                <label translate="true">Image Small - Slider 1</label>
+                <description>width: 640px</description>
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="absolunet_slider_enable_url_slider_1" xsi:type="select" visible="true" source_model="Magento\Config\Model\Config\Source\Yesno" sort_order="5">
+                <label translate="true">Add a Main link</label>
+                <description>Enable or disable the link</description>
+            </parameter>
+
+            <parameter name="absolunet_slider_url_slider_1" xsi:type="text" visible="true" sort_order="6">
+                <label translate="true">Main Link - Slider 1</label>
+                <depends>
+                    <parameter name="absolunet_slider_enable_url_slider_1" value="1" />
+                </depends>
+            </parameter>
+            <parameter name="absolunet_slider_align_slider_1" xsi:type="select" visible="true" sort_order="7">
+                <label translate="true">Text Alignement - Slider 1</label>
+                <options>
+                    <option name="left" value="left" selected="true">
+                        <label translate="true">Left</label>
+                    </option>
+                    <option name="right" value="right">
+                        <label translate="true">Right</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="absolunet_slider_title_slider_1" xsi:type="text" visible="true" sort_order="8">
+                <label translate="true">Title - Slider 1</label>
+            </parameter>
+            <parameter name="absolunet_slider_color_title_slider_1" xsi:type="text" visible="true" sort_order="9">
+                <label translate="true">Color Title - Slider 1</label>
+            </parameter>
+            <parameter name="absolunet_slider_desc_slider_1" xsi:type="text" visible="true" sort_order="10">
+                <label translate="true">Description - Slider 1</label>
+            </parameter>
+            <parameter name="absolunet_slider_color_desc_slider_1" xsi:type="text" visible="true" sort_order="11">
+                <label translate="true">Color Description - Slider 1</label>
+            </parameter>
+            <parameter name="absolunet_slider_cta1_label_slider_1" xsi:type="text" visible="true" sort_order="12">
+                <label translate="true">Label Call to action 1 - Slider 1</label>
+            </parameter>
+            <parameter name="absolunet_slider_cta1_url_slider_1" xsi:type="text" visible="true" sort_order="13">
+                <label translate="true">URL Call to action 1 - Slider 1</label>
+            </parameter>
+            <parameter name="absolunet_slider_cta1_color_slider_1" xsi:type="select" visible="true" sort_order="14">
+                <label translate="true">Color Call to action - Slider 1</label>
+                <options>
+                    <option name="black" value="black" selected="true">
+                        <label translate="true">Black</label>
+                    </option>
+                    <option name="white" value="white">
+                        <label translate="true">White</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="absolunet_slider_cta2_label_slider_1" xsi:type="text" visible="true" sort_order="15">
+                <label translate="true">Label Call to action 2 - Slider 1</label>
+            </parameter>
+            <parameter name="absolunet_slider_cta2_url_slider_1" xsi:type="text" visible="true" sort_order="16">
+                <label translate="true">URL Call to action 2 - Slider 1</label>
+            </parameter>
+            <parameter name="absolunet_slider_cta2_color_slider_1" xsi:type="select" visible="true" sort_order="17">
+                <label translate="true">Color Call to action 2 - Slider 1</label>
+                <options>
+                    <option name="black" value="black" selected="true">
+                        <label translate="true">Black</label>
+                    </option>
+                    <option name="white" value="white">
+                        <label translate="true">White</label>
+                    </option>
+                </options>
+            </parameter>
+
+            <parameter name="absolunet_slider_image_small_slider_2" xsi:type="block" visible="true" sort_order="18">
+                <label translate="true">Image Small - Slider 2</label>
+                <description>(TBD)</description>
+
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="absolunet_slider_image_medium_slider_2" xsi:type="block" visible="true" sort_order="19">
+                <label translate="true">Image Medium - Slider 2</label>
+                <description>(TBD)</description>
+
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="absolunet_slider_image_large_slider_2" xsi:type="block" visible="true" sort_order="20">
+                <label translate="true">Image Large - Slider 2</label>
+                <description>(TBD)</description>
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="absolunet_slider_enable_url_slider_2" xsi:type="select" visible="true" source_model="Magento\Config\Model\Config\Source\Yesno" sort_order="21">
+                <label translate="true">Add a Main link</label>
+                <description>Enable or disable the link</description>
+            </parameter>
+            <parameter name="absolunet_slider_url_slider_2" xsi:type="text" visible="true" sort_order="22">
+                <label translate="true">Main Link - Slider 2</label>
+                <depends>
+                    <parameter name="absolunet_slider_enable_url_slider_2" value="1" />
+                </depends>
+            </parameter>
+            <parameter name="absolunet_slider_align_slider_2" xsi:type="select" visible="true" sort_order="23">
+                <label translate="true">Text Alignement - Slider 2</label>
+                <options>
+                    <option name="left" value="left" selected="true">
+                        <label translate="true">Left</label>
+                    </option>
+                    <option name="right" value="right">
+                        <label translate="true">Right</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="absolunet_slider_title_slider_2" xsi:type="text" visible="true" sort_order="24">
+                <label translate="true">Title - Slider 2</label>
+            </parameter>
+            <parameter name="absolunet_slider_color_title_slider_2" xsi:type="text" visible="true" sort_order="25">
+                <label translate="true">Color Title - Slider 2</label>
+            </parameter>
+            <parameter name="absolunet_slider_desc_slider_2" xsi:type="text" visible="true" sort_order="26">
+                <label translate="true">Description - Slider 2</label>
+            </parameter>
+            <parameter name="absolunet_slider_color_desc_slider_2" xsi:type="text" visible="true" sort_order="27">
+                <label translate="true">Color Description - Slider 2</label>
+            </parameter>
+            <parameter name="absolunet_slider_cta1_label_slider_2" xsi:type="text" visible="true" sort_order="28">
+                <label translate="true">Label Call to action 1 - Slider 2</label>
+            </parameter>
+            <parameter name="absolunet_slider_cta1_url_slider_2" xsi:type="text" visible="true" sort_order="29">
+                <label translate="true">URL Call to action 1 - Slider 2</label>
+            </parameter>
+            <parameter name="absolunet_slider_cta1_color_slider_2" xsi:type="select" visible="true" sort_order="30">
+                <label translate="true">Color Call to action - Slider 2</label>
+                <options>
+                    <option name="black" value="black" selected="true">
+                        <label translate="true">Black</label>
+                    </option>
+                    <option name="white" value="white">
+                        <label translate="true">White</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="absolunet_slider_cta2_label_slider_2" xsi:type="text" visible="true" sort_order="31">
+                <label translate="true">Label Call to action 2 - Slider 2</label>
+            </parameter>
+            <parameter name="absolunet_slider_cta2_url_slider_2" xsi:type="text" visible="true" sort_order="32">
+                <label translate="true">URL Call to action 2 - Slider 2</label>
+            </parameter>
+            <parameter name="absolunet_slider_cta2_color_slider_2" xsi:type="select" visible="true" sort_order="33">
+                <label translate="true">Color Call to action 2 - Slider 2</label>
+                <options>
+                    <option name="black" value="black" selected="true">
+                        <label translate="true">Black</label>
+                    </option>
+                    <option name="white" value="white">
+                        <label translate="true">White</label>
+                    </option>
+                </options>
+            </parameter>
+
+            <parameter name="absolunet_slider_image_small_slider_3" xsi:type="block" visible="true" sort_order="34">
+                <label translate="true">Image Small - Slider 3</label>
+                <description>(TBD)</description>
+
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="absolunet_slider_image_medium_slider_3" xsi:type="block" visible="true" sort_order="35">
+                <label translate="true">Image Medium - Slider 3</label>
+                <description>(TBD)</description>
+
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="absolunet_slider_image_large_slider_3" xsi:type="block" visible="true" sort_order="36">
+                <label translate="true">Image Large - Slider 3</label>
+                <description>(TBD)</description>
+                <block class="Absolunet\WidgetBlock\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Select image ...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+            <parameter name="absolunet_slider_enable_url_slider_3" xsi:type="select" visible="true" source_model="Magento\Config\Model\Config\Source\Yesno" sort_order="37">
+                <label translate="true">Add a Main link</label>
+                <description>Enable or disable the link</description>
+            </parameter>
+            <parameter name="absolunet_slider_url_slider_3" xsi:type="text" visible="true" sort_order="38">
+                <label translate="true">Main Link - Slider 3</label>
+                <depends>
+                    <parameter name="absolunet_slider_enable_url_slider_3" value="1" />
+                </depends>
+            </parameter>
+            <parameter name="absolunet_slider_align_slider_3" xsi:type="select" visible="true" sort_order="39">
+                <label translate="true">Text Alignement - Slider 3</label>
+                <options>
+                    <option name="left" value="left" selected="true">
+                        <label translate="true">Left</label>
+                    </option>
+                    <option name="right" value="right">
+                        <label translate="true">Right</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="absolunet_slider_title_slider_3" xsi:type="text" visible="true" sort_order="40">
+                <label translate="true">Title - Slider 3</label>
+            </parameter>
+            <parameter name="absolunet_slider_color_title_slider_3" xsi:type="text" visible="true" sort_order="41">
+                <label translate="true">Color Title - Slider 3</label>
+            </parameter>
+            <parameter name="absolunet_slider_desc_slider_3" xsi:type="text" visible="true" sort_order="42">
+                <label translate="true">Description - Slider 3</label>
+            </parameter>
+            <parameter name="absolunet_slider_color_desc_slider_3" xsi:type="text" visible="true" sort_order="43">
+                <label translate="true">Color Description - Slider 3</label>
+            </parameter>
+            <parameter name="absolunet_slider_cta1_label_slider_3" xsi:type="text" visible="true" sort_order="44">
+                <label translate="true">Label Call to action 1 - Slider 3</label>
+            </parameter>
+            <parameter name="absolunet_slider_cta1_url_slider_3" xsi:type="text" visible="true" sort_order="45">
+                <label translate="true">URL Call to action 1 - Slider 3</label>
+            </parameter>
+            <parameter name="absolunet_slider_cta1_color_slider_3" xsi:type="select" visible="true" sort_order="46">
+                <label translate="true">Color Call to action - Slider 3</label>
+                <options>
+                    <option name="black" value="black" selected="true">
+                        <label translate="true">Black</label>
+                    </option>
+                    <option name="white" value="white">
+                        <label translate="true">White</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="absolunet_slider_cta2_label_slider_3" xsi:type="text" visible="true" sort_order="47">
+                <label translate="true">Label Call to action 2 - Slider 3</label>
+            </parameter>
+            <parameter name="absolunet_slider_cta2_url_slider_3" xsi:type="text" visible="true" sort_order="48">
+                <label translate="true">URL Call to action 2 - Slider 3</label>
+            </parameter>
+            <parameter name="absolunet_slider_cta2_color_slider_3" xsi:type="select" visible="true" sort_order="49">
+                <label translate="true">Color Call to action 2 - Slider 3</label>
+                <options>
+                    <option name="black" value="black" selected="true">
+                        <label translate="true">Black</label>
+                    </option>
+                    <option name="white" value="white">
+                        <label translate="true">White</label>
+                    </option>
+                </options>
+            </parameter>
+        </parameters>
+    </widget>
+    -->
+    <!-- /END WIDGET SLIDER-->
+</widgets>
+

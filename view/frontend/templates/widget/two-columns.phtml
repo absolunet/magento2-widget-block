@@ -1,0 +1,45 @@
+<?php
+    $widgetId = $this->getData('absolunet_tc_widget_id');
+
+    // block1
+    $widgetUrl1 = $this->getData('absolunet_tc_url_1');
+    $widgetTitle1 = $this->getData('absolunet_tc_title_1');
+    $widgetImg1 = $this->getData('absolunet_tc_image_1');
+
+    // block2
+    $widgetUrl2 = $this->getData('absolunet_tc_url_2');
+    $widgetTitle2 = $this->getData('absolunet_tc_title_2');
+    $widgetImg2 = $this->getData('absolunet_tc_image_2');
+?>
+
+<section class="absolunet-widget absolunet-two-columns-widget text-center" id="<?php echo $widgetId; ?>">
+    <div class="clearfix content-widget">
+        <div class="small-6 columns block" style="background-image:url('/pub/media/<?php echo $widgetImg1; ?>')">
+            <?php if ($widgetUrl1): ?>
+                <a href="<?php echo $widgetUrl1; ?>">
+            <?php endif; ?>
+
+            <?php if ($widgetTitle1): ?>
+                <h3 class="tc-1"><?php echo $widgetTitle1; ?></h3>
+            <?php endif; ?>
+
+            <?php if ($widgetUrl1): ?>
+                </a>
+            <?php endif; ?>
+        </div>
+
+        <div class="small-6 columns block" style="background-image:url('/pub/media/<?php echo $widgetImg2; ?>')">
+            <?php if ($widgetUrl2): ?>
+            <a href="<?php echo $widgetUrl2; ?>">
+                <?php endif; ?>
+
+                <?php if ($widgetTitle2): ?>
+                    <h3 class="tc-1"><?php echo $widgetTitle2; ?></h3>
+                <?php endif; ?>
+
+                <?php if ($widgetUrl2): ?>
+            </a>
+        <?php endif; ?>
+        </div>
+    </div>
+</section>

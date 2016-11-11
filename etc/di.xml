@@ -1,0 +1,10 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <preference for="Magento\Framework\Data\Form\Element\Editor" type="Absolunet\WidgetBlock\Framework\Data\Form\Element\Editor" />
+    <type name="Magento\Cms\Block\Adminhtml\Wysiwyg\Images\Content">
+        <plugin name="comwrap-widget-change-getoninserturl" type="Absolunet\WidgetBlock\Model\Plugin\Adminhtml\Wysiwyg\Images\Content" sortOrder="10"/>
+    </type>
+    <type name="Magento\Cms\Helper\Wysiwyg\Images">
+        <plugin name="comwrap-widget-change-getoninserturl" type="Absolunet\WidgetBlock\Model\Plugin\Cms\Helper\Wysiwyg\Images" sortOrder="10"/>
+    </type>
+
+</config>

@@ -1,0 +1,41 @@
+<?php
+    $widgetId = $this->getData('absolunet_tcti_widget_id');
+
+    // block image
+    $widgetImgAlign = $this->getData('absolunet_tcti_image_align_bi');
+    $widgetImg = $this->getData('absolunet_tcti_image');
+
+    // block text
+    $widgetTitle = $this->getData('absolunet_tcti_title');
+    $widgetText = $this->getData('absolunet_tcti_text');
+    $widgetButtonLabel = $this->getData('absolunet_tcti_button_label');
+    $widgetButtonLink = $this->getData('absolunet_tcti_button_url');
+?>
+
+<section class="absolunet-widget absolunet-two-columns-text-image-widget" id="<?php echo $widgetId; ?>">
+    <div class="clearfix content-widget">
+
+        <div class="small-6 columns block image <?php if ($widgetImgAlign ) echo 'right'; ?>">
+            <img src="/pub/media/<?php echo $widgetImg; ?>" alt="<?php echo $widgetTitle; ?>" />
+        </div>
+
+        <div class="small-6 columns block text">
+            <h3><?php echo $widgetTitle; ?></h3>
+
+            <?php if ($widgetText): ?>
+                <p><?php echo $widgetText; ?></p>
+            <?php endif; ?>
+
+            <?php if ($widgetButtonLink): ?>
+                <a href="<?php echo $widgetButtonLink; ?>">
+                    <?php if ($widgetButtonLabel): ?>
+                        <?php echo $widgetButtonLabel ?>
+                    <?php else: ?>
+                        <?php echo __('Learn more'); ?>
+                    <?php endif; ?>
+                </a>
+            <?php endif; ?>
+
+        </div>
+    </div>
+</section>

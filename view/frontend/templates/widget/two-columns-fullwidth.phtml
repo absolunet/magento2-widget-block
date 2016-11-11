@@ -1,0 +1,88 @@
+<?php
+    $widgetId = $this->getData('absolunet_tcfw_id');
+    $widgetFullWidth = $this->getData('absolunet_tcfw_fullwidth');
+    $widgetImageBi = $this->getData('absolunet_tcfw_image_large_bi');
+    $widgetImageTabletBi = $this->getData('absolunet_tcfw_image_medium_bi');
+    $widgetImageMobileBi = $this->getData('absolunet_tcfw_image_small_bi');
+    $widgetBiPosition = $this->getData('absolunet_tcfw_image_align_bi');
+    $widgetUrlBi = $this->getData('absolunet_tcfw_url_bi');
+    $widgetImageBtxt = $this->getData('absolunet_tcfw_image_large_bt');
+    $widgetImageTabletBtxt = $this->getData('absolunet_tcfw_image_medium_bt');
+    $widgetImageMobileBtxt = $this->getData('absolunet_tcfw_image_small_bt');
+    $widgetUrlBt = $this->getData('absolunet_tcfw_url_bt');
+    $widgetTitleBt = $this->getData('absolunet_tcfw_title_bt');
+    $widgetTitleColorBt = $this->getData('absolunet_tcfw_color_title_bt');
+    $widgetDescBt = $this->getData('absolunet_tcfw_desc_bt');
+    $widgetDescColorBt = $this->getData('absolunet_tcfw_color_desc_bt');
+    $widgetCTALabelBt = $this->getData('absolunet_tcfw_cta_label_bt');
+    $widgetCTAUrlBt = $this->getData('absolunet_tcfw_cta_url_bt');
+    $widgetCTAColorBt = $this->getData('absolunet_tcfw_cta_color_bt');
+?>
+<div>
+<style type="text/css">
+    #<?php echo $widgetId; ?> .position { float: <?php echo $widgetBiPosition; ?>;}
+
+    @media only screen and (max-width: 640px) {
+        <?php if ($widgetImageMobileBi): ?>
+        #<?php echo $widgetId; ?> .bg-bi { background-image: url('/pub/media/<?php echo $widgetImageMobileBi; ?>');}
+        <?php else: ?>
+            #<?php echo $widgetId; ?> .bg-bi { background-image: url('/pub/media/<?php echo $widgetImageBi; ?>');}
+        <?php endif; ?>
+
+        <?php if ($widgetImageMobileBtxt): ?>
+            #<?php echo $widgetId; ?> .bg-bt { background-image: url('/pub/media/<?php echo $widgetImageMobileBtxt; ?>');} 
+        <?php else: ?>
+            #<?php echo $widgetId; ?> .bg-bt { background-image: url('/pub/media/<?php echo $widgetImageBtxt; ?>');}
+        <?php endif; ?>
+    }  
+
+    @media only screen and (min-width: 641px) and (max-width: 1024px) {
+
+        <?php if ($widgetImageTabletBi): ?>
+            #<?php echo $widgetId; ?> .bg-bi { background-image: url('/pub/media/<?php echo $widgetImageTabletBi; ?>');}
+        <?php else: ?>
+            #<?php echo $widgetId; ?> .bg-bt { background-image: url('/pub/media/<?php echo $widgetImageBtxt; ?>');}
+        <?php endif; ?>
+
+        <?php if ($widgetImageTabletBtxt): ?>
+            #<?php echo $widgetId; ?> .bg-bt { background-image: url('/pub/media/<?php echo $widgetImageTabletBtxt; ?>');}
+        <?php else: ?>
+            #<?php echo $widgetId; ?> .bg-bt { background-image: url('/pub/media/<?php echo $widgetImageBtxt; ?>');}
+        <?php endif; ?>
+        
+    }
+
+    @media only screen and (min-width: 1025px) {
+        #<?php echo $widgetId; ?> .bg-bi { background-image: url('/pub/media/<?php echo $widgetImageBi; ?>');}
+        #<?php echo $widgetId; ?> .bg-bt { background-image: url('/pub/media/<?php echo $widgetImageBtxt; ?>');}
+    }
+</style>
+</div>
+<section id="<?php echo $widgetId; ?>" class="absolunet-widget absolunet-two-columns-fullwidth-widget text-center <?php echo $widgetFullWidth; ?>">
+    <div class="content-widget clearfix">
+        <div class="medium-6 small-12 columns block position">
+            <div class="scaling-block bg-img bg-bi">
+                <div class="scaling-block-content">
+                    <?php if ($widgetUrlBi): ?>
+                        <a href="<?php echo $widgetUrlBi; ?>" class="main-link"></a>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="medium-6 small-12 columns block block-txt">
+            <div class="scaling-block bg-img bg-bt">
+                <div class="scaling-block-content">
+                    <div class="txt-wrapper">
+                        <?php if ($widgetUrlBt): ?><a href="<?php echo $widgetUrlBt; ?>" class="main-link"></a><?php endif; ?>
+                        <?php if ($widgetTitleBt): ?><h1 style="color: <?php echo $widgetTitleColorBt; ?>"><?php echo $widgetTitleBt; ?></h1><?php endif; ?>
+                        <?php if ($widgetDescBt): ?><p style="color: <?php echo $widgetDescColorBt; ?>"><?php echo $widgetDescBt; ?></p><?php endif; ?>
+                        <?php if ($widgetCTALabelBt): ?>
+                            <a href="<?php echo $widgetCTAUrlBt; ?>" class="button secondary <?php echo $widgetCTAColorBt; ?>"><?php echo $widgetCTALabelBt; ?></a>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

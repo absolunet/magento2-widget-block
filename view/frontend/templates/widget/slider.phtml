@@ -1,0 +1,240 @@
+<?php
+    $widgetId = $this->getData('absolunet_slider_id');
+    $widgetFullWidth = $this->getData('absolunet_slider_fullwidth');
+    $widgetType = $this->getData('absolunet_slider_enable_gallery');
+
+    // BLOCK 1
+    $sliderImgSmall1 = $this->getData('absolunet_slider_image_small_slider_1');
+    $sliderImgMedium1 = $this->getData('absolunet_slider_image_medium_slider_1');
+    $sliderImgLarge1 = $this->getData('absolunet_slider_image_large_slider_1');
+    $sliderEnableUrl1 = $this->getData('absolunet_slider_enable_url_slider_1');
+    $sliderUrl1 = $this->getData('absolunet_slider_url_slider_1');
+    $sliderTxtAlign1 = $this->getData('absolunet_slider_align_slider_1');
+    $sliderTitle1 = $this->getData('absolunet_slider_title_slider_1');
+    $sliderColorTitle1 = $this->getData('absolunet_slider_color_title_slider_1');
+    $sliderDesc1 = $this->getData('absolunet_slider_desc_slider_1');
+    $sliderColorDesc1 = $this->getData('absolunet_slider_color_desc_slider_1');
+    // CTA
+    $sliderCta1Label1 = $this->getData('absolunet_slider_cta1_label_slider_1');
+    $sliderCta1Url1 = $this->getData('absolunet_slider_cta1_url_slider_1');
+    $sliderCta1Color1 = $this->getData('absolunet_slider_cta1_color_slider_1');
+    $sliderCta2Label1 = $this->getData('absolunet_slider_cta2_label_slider_1');
+    $sliderCta2Url1 = $this->getData('absolunet_slider_cta2_url_slider_1');
+    $sliderCta2Color1 = $this->getData('absolunet_slider_cta2_color_slider_1');
+
+    // BLOCK 2
+    $sliderImgSmall2 = $this->getData('absolunet_slider_image_small_slider_2');
+    $sliderImgMedium2 = $this->getData('absolunet_slider_image_medium_slider_2');
+    $sliderImgLarge2 = $this->getData('absolunet_slider_image_large_slider_2');
+    $sliderEnableUrl2 = $this->getData('absolunet_slider_enable_url_slider_2');
+    $sliderUrl2 = $this->getData('absolunet_slider_url_slider_2');
+    $sliderTxtAlign2 = $this->getData('absolunet_slider_align_slider_2');
+    $sliderTitle2 = $this->getData('absolunet_slider_title_slider_2');
+    $sliderColorTitle2 = $this->getData('absolunet_slider_color_title_slider_2');
+    $sliderDesc2 = $this->getData('absolunet_slider_desc_slider_2');
+    $sliderColorDesc2 = $this->getData('absolunet_slider_color_desc_slider_2');
+    // CTA
+    $sliderCta1Label2 = $this->getData('absolunet_slider_cta1_label_slider_2');
+    $sliderCta1Url2 = $this->getData('absolunet_slider_cta1_url_slider_2');
+    $sliderCta1Color2 = $this->getData('absolunet_slider_cta1_color_slider_2');
+    $sliderCta2Label2 = $this->getData('absolunet_slider_cta2_label_slider_2');
+    $sliderCta2Url2 = $this->getData('absolunet_slider_cta2_url_slider_2');
+    $sliderCta2Color2 = $this->getData('absolunet_slider_cta2_color_slider_2');
+
+    // BLOCK 3
+    $sliderImgSmall3 = $this->getData('absolunet_slider_image_small_slider_3');
+    $sliderImgMedium3 = $this->getData('absolunet_slider_image_medium_slider_3');
+    $sliderImgLarge3 = $this->getData('absolunet_slider_image_large_slider_3');
+    $sliderEnableUrl3 = $this->getData('absolunet_slider_enable_url_slider_3');
+    $sliderUrl3 = $this->getData('absolunet_slider_url_slider_3');
+    $sliderTxtAlign3 = $this->getData('absolunet_slider_align_slider_3');
+    $sliderTitle3 = $this->getData('absolunet_slider_title_slider_3');
+    $sliderColorTitle3 = $this->getData('absolunet_slider_color_title_slider_3');
+    $sliderDesc3 = $this->getData('absolunet_slider_desc_slider_3');
+    $sliderColorDesc3 = $this->getData('absolunet_slider_color_desc_slider_3');
+    // CTA
+    $sliderCta1Label3 = $this->getData('absolunet_slider_cta1_label_slider_3');
+    $sliderCta1Url3 = $this->getData('absolunet_slider_cta1_url_slider_3');
+    $sliderCta1Color3 = $this->getData('absolunet_slider_cta1_color_slider_3');
+    $sliderCta2Label3 = $this->getData('absolunet_slider_cta2_label_slider_3');
+    $sliderCta2Url3 = $this->getData('absolunet_slider_cta2_url_slider_3');
+    $sliderCta2Color3 = $this->getData('absolunet_slider_cta2_color_slider_3');
+?>
+<div>
+<style type="text/css">
+    #<?php echo $widgetId; ?> {
+        position: relative;
+    }
+    #<?php echo $widgetId; ?> .slick-prev,
+    #<?php echo $widgetId; ?> .slick-next {
+        left: 30px;
+        z-index: 2;
+    }
+
+    #<?php echo $widgetId; ?> .slick-next {
+        right: 30px;
+        left: initial;
+    }
+    /*SMALL*/
+    @media only screen and (max-width: 640px) {
+        /*Slider 1*/
+        <?php if ($sliderImgSmall1): ?>
+            #<?php echo $widgetId; ?> .img-slider1 { background-image: url('/pub/media/<?php echo $sliderImgSmall1; ?>');}
+        <?php else: ?>
+            #<?php echo $widgetId; ?> .img-slider1 { background-image: url('/pub/media/<?php echo $sliderImgLarge1; ?>');}
+        <?php endif; ?>
+
+        /*Slider 2*/
+        <?php if ($sliderImgSmall2): ?>
+            #<?php echo $widgetId; ?> .img-slider2 { background-image: url('/pub/media/<?php echo $sliderImgSmall2; ?>');}
+        <?php else: ?>
+            #<?php echo $widgetId; ?> .img-slider2 { background-image: url('/pub/media/<?php echo $sliderImgLarge2; ?>');}
+        <?php endif; ?>
+
+        /*Slider 2*/
+        <?php if ($sliderImgSmall3): ?>
+            #<?php echo $widgetId; ?> .img-slider3 { background-image: url('/pub/media/<?php echo $sliderImgSmall3; ?>');}
+        <?php else: ?>
+            #<?php echo $widgetId; ?> .img-slider3 { background-image: url('/pub/media/<?php echo $sliderImgLarge3; ?>');}
+        <?php endif; ?>
+    }
+
+    /*medium*/  
+    @media only screen and (min-width: 641px) and (max-width: 1024px) {
+        /*slider 1*/
+        <?php if ($sliderImgMedium1): ?>
+            #<?php echo $widgetId; ?> .img-slider1 { background-image: url('/pub/media/<?php echo $sliderImgMedium1; ?>');}
+        <?php else: ?>
+            #<?php echo $widgetId; ?> .img-slider1 { background-image: url('/pub/media/<?php echo $sliderImgLarge1; ?>');}
+        <?php endif; ?>
+
+        /*Slider 2*/
+        <?php if ($sliderImgMedium2): ?>
+            #<?php echo $widgetId; ?> .img-slider2 { background-image: url('/pub/media/<?php echo $sliderImgMedium2; ?>');}
+        <?php else: ?>
+            #<?php echo $widgetId; ?> .img-slider2 { background-image: url('/pub/media/<?php echo $sliderImgLarge2; ?>');}
+        <?php endif; ?>
+
+        /*Slider 2*/
+        <?php if ($sliderImgMedium2): ?>
+            #<?php echo $widgetId; ?> .img-slider3 { background-image: url('/pub/media/<?php echo $sliderImgMedium3; ?>');}
+        <?php else: ?>
+            #<?php echo $widgetId; ?> .img-slider3 { background-image: url('/pub/media/<?php echo $sliderImgLarge3; ?>');}
+        <?php endif; ?>
+    }
+
+    /*large*/
+    @media only screen and (min-width: 1025px) {
+        #<?php echo $widgetId; ?> .img-slider1 { background-image: url('/pub/media/<?php echo $sliderImgLarge1; ?>');}
+        #<?php echo $widgetId; ?> .img-slider2 { background-image: url('/pub/media/<?php echo $sliderImgLarge2; ?>');}
+        #<?php echo $widgetId; ?> .img-slider3 { background-image: url('/pub/media/<?php echo $sliderImgLarge3; ?>');}
+    }
+</style>
+</div>
+<section id="<?php echo $widgetId; ?>" class="absolunet-widget absolunet-slider-widget <?php echo $widgetType; ?> <?php echo $widgetFullWidth; ?>">
+    <div>
+    <div class="content-widget clearfix slider-1">
+        <div class="block">
+            <div class="bg-img img-slider1">
+                <div class="scaling-block">
+                    <div class="scaling-block-content">
+                        <?php if ($sliderUrl1): ?>
+                            <a href="<?php echo $sliderUrl1; ?>" class="main-link"></a>
+                        <?php endif; ?>
+                        <div class="txt-wrapper">
+                            <div class="row">
+                                <div class="medium-6 columns end float-<?php echo $sliderTxtAlign1; ?>">
+                                <?php if ($sliderTitle1): ?>
+                                    <h1 style="color: <?php echo $sliderColorTitle1; ?>"><?php echo $sliderTitle1; ?></h1>
+                                <?php endif; ?>
+                                <?php if ($sliderDesc1): ?>
+                                    <p style="color: <?php echo $sliderColorDesc1; ?>"><?php echo $sliderDesc1; ?></p>
+                                <?php endif; ?>
+                                <?php if ($sliderCta1Label1): ?>
+                                    <a href="<?php echo $sliderCta1Url1; ?>" class="button secondary <?php echo $sliderCta1Color1; ?>"><?php echo $sliderCta1Label1; ?></a>
+                                <?php endif; ?>
+                                <?php if ($sliderCta2Label1): ?>
+                                    <a href="<?php echo $sliderCta2Url1; ?>" class="button secondary <?php echo $sliderCta2Color1; ?>"><?php echo $sliderCta2Label1; ?></a>
+                                <?php endif; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <?php if (($sliderImgSmall2) || ($sliderImgMedium2) || ($sliderImgLarge2)): ?>
+    <div>
+    <div class="content-widget clearfix slider-2">
+        <div class="block">
+            <div class="bg-img img-slider2">
+                <div class="scaling-block">
+                    <div class="scaling-block-content">
+                        <?php if ($sliderUrl2): ?>
+                            <a href="<?php echo $sliderUrl2; ?>" class="main-link"></a>
+                        <?php endif; ?>
+                        <div class="txt-wrapper">
+                            <div class="row">
+                                <div class="medium-6 columns end float-<?php echo $sliderTxtAlign2; ?>">
+                                <?php if ($sliderTitle2): ?>
+                                    <h1 style="color: <?php echo $sliderColorTitle2; ?>"><?php echo $sliderTitle2; ?></h1>
+                                <?php endif; ?>
+                                <?php if ($sliderDesc2): ?>
+                                    <p style="color: <?php echo $sliderColorDesc2; ?>"><?php echo $sliderDesc2; ?></p>
+                                <?php endif; ?>
+                                <?php if ($sliderCta1Label2): ?>
+                                    <a href="<?php echo $sliderCta1Url2; ?>" class="button secondary <?php echo $sliderCta1Color2; ?>"><?php echo $sliderCta1Label2; ?></a>
+                                <?php endif; ?>
+                                <?php if ($sliderCta2Label2): ?>
+                                    <a href="<?php echo $sliderCta2Url2; ?>" class="button secondary <?php echo $sliderCta2Color2; ?>"><?php echo $sliderCta2Label2; ?></a>
+                                <?php endif; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <?php endif; ?>
+
+    <?php if (($sliderImgSmall3) || ($sliderImgMedium3) || ($sliderImgLarge3)): ?>
+    <div>
+    <div class="content-widget clearfix slider-3">
+        <div class="block">
+            <div class="bg-img img-slider3">
+                <div class="scaling-block">
+                    <div class="scaling-block-content">
+                        <?php if ($sliderUrl3): ?>
+                            <a href="<?php echo $sliderUrl3; ?>" class="main-link"></a>
+                        <?php endif; ?>
+                        <div class="txt-wrapper">
+                            <div class="row">
+                                <div class="medium-6 columns end float-<?php echo $sliderTxtAlign3; ?>">
+                                <?php if ($sliderTitle3): ?>
+                                    <h1 style="color: <?php echo $sliderColorTitle3; ?>"><?php echo $sliderTitle3; ?></h1>
+                                <?php endif; ?>
+                                <?php if ($sliderDesc3): ?>
+                                    <p style="color: <?php echo $sliderColorDesc3; ?>"><?php echo $sliderDesc3; ?></p>
+                                <?php endif; ?>
+                                <?php if ($sliderCta1Label3): ?>
+                                    <a href="<?php echo $sliderCta1Url3; ?>" class="button secondary <?php echo $sliderCta1Color3; ?>"><?php echo $sliderCta1Label3; ?></a>
+                                <?php endif; ?>
+                                <?php if ($sliderCta2Label3): ?>
+                                    <a href="<?php echo $sliderCta2Url3; ?>" class="button secondary <?php echo $sliderCta2Color3; ?>"><?php echo $sliderCta2Label3; ?></a>
+                                <?php endif; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <?php endif; ?>
+</section>
